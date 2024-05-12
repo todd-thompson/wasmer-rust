@@ -1,0 +1,22 @@
+[[module]]
+name = "server"
+source = "target/wasm32-wasi/release/rust-wcgi-starter.wasm"
+abi = "wasi"
+
+[[command]]
+name = "server"
+module = "server"
+runner = "https://webc.org/runner/wcgi"
+
+[command.annotations.wasi]
+env = [ "SCRIPT_NAME=rust_wcgi",]
+[command.annotations.wcgi]
+dialect = "rfc-3875"
+
+[package]
+name = "todd-thompson/wasmer-rust"
+version = "0.2.0"
+description = "A template for Rust WCGI applications"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/todd-thompson/wasmer-rust"

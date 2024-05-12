@@ -1,0 +1,15 @@
+[package]
+name = "rust-wcgi-starter"
+authors = ["Wasmer Engineering Team <engineering@wasmer.io>"]
+edition = "2021"
+homepage = "https://wasmer.io/wasmer-examples/rust-wcgi-starter"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/wasmer-examples/rust-wcgi-starter"
+rust-version = "1.64.0"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cgi = "0.6.0"

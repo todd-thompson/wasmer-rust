@@ -1,0 +1,3 @@
+kind: wasmer.io/App.v0
+name: todd-thompson-wasmer-rust
+package: todd-thompson/wasmer-rust
